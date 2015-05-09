@@ -55,7 +55,7 @@ public final class Plugin extends JavaPlugin {
     public boolean onCommand(final CommandSender s, Command c, String l, String[] a) {
 	if (c.getName().equalsIgnoreCase("bedtime")) {
 	    if (!(s instanceof Player)) {
-		s.sendMessage(ChatColor.RED+"Vous devez être un joueur");
+		s.sendMessage(ChatColor.RED+"you are not a player!");
 		return true;
 	    }
 	    Player pl = (Player)s;
@@ -70,10 +70,15 @@ public final class Plugin extends JavaPlugin {
 
 	    if(a[0].equalsIgnoreCase("enable")) {
 		enable = true;
+		pl.sendMessage("BedTime enabled");
+		return true;
 	    } else if(a[0].equalsIgnoreCase("disable")) {
 		enable = false;
+		pl.sendMessage("BedTime disabled");
+		return true;
 	    } else if(a[0].equalsIgnoreCase("percent")) {
 		percent = Integer.parseInt(a[1]);
+		pl.sendMessage("done.");
 		return true;
 	    } else if(a[0].equalsIgnoreCase("reset")) {
 		playerOnBed = 0;
@@ -81,5 +86,9 @@ public final class Plugin extends JavaPlugin {
 	    }
 	}
 	return false;
+    }
+
+    public boolean isEn() {
+	return enable;
     }
 }

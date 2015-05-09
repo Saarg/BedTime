@@ -17,12 +17,14 @@ public class PluginListener implements Listener {
 
     @EventHandler
     public void onPlayerBedEnterEvent(final PlayerBedEnterEvent ev) {
-	this.p.addOnePlayerOnBed();
+	if(p.isEn())
+	    this.p.addOnePlayerOnBed();
     }
     
     @EventHandler
     public void onPlayerBedLeaveEvent(final PlayerBedLeaveEvent ev) {
-    	this.p.removeOnePlayerOnBed();
+	if(p.isEn())
+	    this.p.removeOnePlayerOnBed();
     }
 
     @EventHandler
