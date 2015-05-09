@@ -1,0 +1,8 @@
+name: BedTimePlugin
+main: me.saarg.Plugin.Plugin
+version: 1.0
+
+commands:
+   bedtime:
+      description: bedtime
+      usage: /bedtime <subcommand>
