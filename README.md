@@ -4,16 +4,16 @@ BedTime est un plugin très basique devellopé pour les serveurs craftbukkit/spi
 ##### Le code n'est plus mis a jours!
 
 # Les commandes
-## activer le plugin in game
+##### activer le plugin in game
 '''/bedtime enable'''
 
-## desactiver le plugin in game
+##### desactiver le plugin in game
 '''/bedtime disable'''
 
-## choisir le % de joueurs devant etre dans un lit
+##### choisir le % de joueurs devant etre dans un lit
 '''/bedtime percent x'''
 
-## remettre le nombre de joueurs dans un lit a 0 (si jamais il y a eu un problème)
+##### remettre le nombre de joueurs dans un lit a 0 (si jamais il y a eu un problème)
 '''/bedtime reset'''
 
 # Compiler
